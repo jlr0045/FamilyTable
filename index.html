@@ -1,19 +1,36 @@
 <!doctype html>
 <html>
   <head>
-    
-    <meta charset="utf-8">
-    <title>Family Table</title>
+	  <meta charset="utf-8">
+	  <title>Family Table</title>
 	  <meta name="author" content="Jesse Roach" />
 	  <meta name="description" content="A website built for testing purposes and letting friends know who is available." />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <script src="simpleFunctions.js"></script>
-    
-    <link rel="stylesheet" href="styles.css" />
-    
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+	  <script src="simpleFunctions.js"></script>
+	  <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    
+	  <h2>Who is Available on </h2>
+	  <div class="dropdownDay">
+		  <button onclick="dayDropBtn()" class="dropbtn">Day</button>
+		  <div id="dayDropdown" class="dropdown-content">
+			  <a href="#sun">Sunday</a>
+			  <a href="#mon">Monday</a>
+			  <a href="#tues">Tuesday</a>
+			  <a href="#wed">Wednesday</a>
+			  <a href="#thur">Thursday</a>
+			  <a href="#fri">Friday</a>
+			  <a href="#sat">Saturday</a>
+		  </div>
+	  </div>
+	  <div class="dropdownTime">
+		  <button onclick="timeDropBtn()" class="dropbtn">Time</button>
+		  <div id="timeDropdown" class="dropdown-content">
+			  <a href="#8">8:00 A.M.</a>
+		  </div>
+	  </div>
+	  <button onclick="serveTheInfo()">GO</button>
+	  <p id="listOfAvailablePeople"></p>
   </body>
 </html>
