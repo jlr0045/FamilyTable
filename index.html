@@ -13,36 +13,19 @@
 	
   <body>
 	  <!-- First heading, should disappear when content presented. -->
-	  <h2>Hey fam, start out by picking a day:</h2>
+	  <h2>What day do you want to hang out on?</h2>
 	  <!-- First dropdown, disappears when a day is selected, and calls forth the second heading and second dropdown, based on selected day. -->
-	  <div class="dropdownDay">
-		  <button onclick="dayDropBtn()" class="dropbtn">Day</button>
-		  <div id="dayDropdown" class="dropdown-content">
-			  <a href="#sun">Sunday</a>
-			  <a href="#mon">Monday</a>
-			  <a href="#tues">Tuesday</a>
-			  <a href="#wed">Wednesday</a>
-			  <a href="#thur">Thursday</a>
-			  <a href="#fri">Friday</a>
-			  <a href="#sat">Saturday</a>
-		  </div>
+	  <div class="dayButton">
+		  <button onclick="dayButtonPressed("m")" class="dayBtn">Monday</button>
+		  <button onclick="dayButtonPressed("t")" class="dayBtn">Tuesday</button>
+		  <button onclick="dayButtonPressed("w")" class="dayBtn">Wednesday</button>
+		  <button onclick="dayButtonPressed("r")" class="dayBtn">Thursday</button>
+		  <button onclick="dayButtonPressed("f")" class="dayBtn">Friday</button>
 	  </div>
 	  
 	  <!-- Second dropdown, should appear with times based on selected day. (either MWF or TR) -->
 	  <div class="dropdownTime">
 		  <button onclick="timeMWFDropBtn()" class="dropbtn">Time</button>
-		  <div id="timeDropdown" class="dropdown-content">
-			  <a href="#8">8:00 A.M.</a>
-			  <a href="#9">9:00 A.M.</a>
-			  <a href="#10">10:00 A.M.</a>
-			  <a href="#11">11:00 A.M.</a>
-			  <a href="#12">12:00 P.M.</a>
-			  <a href="#1">1:00 P.M.</a>
-			  <a href="#2">2:00 P.M.</a>
-			  <a href="#3">3:00 P.M.</a>
-			  <a href="#4">4:00 P.M.</a>
-			  <a href="#5">5:00 P.M.</a>
-		  </div>
 	  </div>
 	  <button onclick="serveTheInfo()">GO</button>
 	  <p id="listOfAvailablePeople"></p>
