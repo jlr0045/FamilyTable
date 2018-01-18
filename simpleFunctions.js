@@ -8,6 +8,14 @@ function dayDropBtn() {
     document.getElementById("dayDropdown").classList.toggle("show");
 }
 
+function timeMWFDropBtn() {
+    document.getElementById("dayDropdown").classList.toggle("show");
+}
+
+function timeTRDropBtn() {
+    document.getElementById("dayDropdown").classList.toggle("show");
+}
+
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
