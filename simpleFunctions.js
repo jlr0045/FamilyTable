@@ -5,7 +5,7 @@ function showAvailability() {
 function dayButtonPressed(dayIn) {
     switch (dayIn) {
         case "m":
-            document.getElementByID(container).innerHTML = "";
+            document.getElementByID(container).innerHTML = "<h2>Now, how about a time?</h2>\n<button onclick=\"timeButtonPressedMWF(8)\" class=\"timeBtn\">8:00 A.M.</button>\n<button onclick=\"timeButtonPressedMWF(9)\" class=\"timeBtn\">9:00 A.M.</button>\n<button onclick=\"timeButtonPressedMWF(10)\" class=\"timeBtn\">10:00 A.M.</button>\n<button onclick=\"timeButtonPressedMWF(11)\" class=\"timeBtn\">11:00 A.M.</button>\n<button onclick=\"timeButtonPressedMWF(12)\" class=\"timeBtn\">12:00 P.M.</button>\n<button onclick=\"timeButtonPressedMWF(13)\" class=\"timeBtn\">1:00 P.M.</button>\n<button onclick=\"timeButtonPressedMWF(14)\" class=\"timeBtn\">2:00 P.M.</button>\n<button onclick=\"timeButtonPressedMWF(15)\" class=\"timeBtn\">3:00 P.M.</button>\n<button onclick=\"timeButtonPressedMWF(16)\" class=\"timeBtn\">4:00 P.M.</button>\n<button onclick=\"timeButtonPressedMWF(17)\" class=\"timeBtn\">5:00 P.M.</button>";
             break;
         case "t":
             document.getElementByID(container).innerHTML = "";
