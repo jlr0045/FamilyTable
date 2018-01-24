@@ -2,8 +2,7 @@ body {
     background-color: #79b4c1;
 }
 h2 {
-  font: 200 50px/1 'Great Vibes', Helvetica, sans-serif;
-  font-style: normal;
+  font-family: 'Great Vibes', cursive;
   font-weight: 400;
   color: #434f5b;
 }
