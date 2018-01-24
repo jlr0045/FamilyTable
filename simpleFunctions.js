@@ -5,10 +5,6 @@ let daySelected = "";
 let timeSelected = "";
 
 
-function showAvailability() {
-  document.getElementById("listOfAvailablePeople").innerHTML = "Fill me in with names";
-}
-
 function dayButtonPressed(dayIn) {
   switch (dayIn) {
     case "m":
@@ -79,10 +75,6 @@ function timeButtonPressedMWF(timeIn) {
   }
 }
 
-function showTableAvailabilityButtonPressed() {
-    document.getElementById("dayDropdown").classList.toggle("show");
-}
-
 function timeButtonPressedTR(timeIn) {
   switch (timeIn) {
     case "8":
@@ -114,4 +106,12 @@ function timeButtonPressedTR(timeIn) {
       document.getElementById(container).innerHTML = "";
       break;
   }
+}
+
+function showAvailability() {
+  document.getElementById("listOfAvailablePeople").innerHTML = "Fill me in with names";
+}
+
+function showTableAvailabilityButtonPressed() {
+    document.getElementById("dayDropdown").classList.toggle("show");
 }
