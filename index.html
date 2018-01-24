@@ -12,34 +12,14 @@
   </head>
 
   <body>
-    <div class="container">
+    <div id="container">
       <!-- First heading, should disappear when content presented. -->
   	  <h2>What day do you want to hang out on?</h2>
-
-      <button onclick="dayButtonPressed(m)" class="dayBtn">Monday</button>
-      <button onclick="dayButtonPressed(t)" class="dayBtn">Tuesday</button>
-      <button onclick="dayButtonPressed(w)" class="dayBtn">Wednesday</button>
-      <button onclick="dayButtonPressed(r)" class="dayBtn">Thursday</button>
-      <button onclick="dayButtonPressed(f)" class="dayBtn">Friday</button>
+      <button onclick="dayButtonPressed('m')" class="dayBtn">Monday</button>
+      <button onclick="dayButtonPressed('t')" class="dayBtn">Tuesday</button>
+      <button onclick="dayButtonPressed('w')" class="dayBtn">Wednesday</button>
+      <button onclick="dayButtonPressed('r')" class="dayBtn">Thursday</button>
+      <button onclick="dayButtonPressed('f')" class="dayBtn">Friday</button>
     </div>
-
-    <div class="timePageAppearanceTR">
-      <!-- Second heading, should disappear when content presented. -->
-  	  <h2>Now, how about a time?</h2>
-  	  <!-- Second buttons, disappears when a day is selected, and calls forth the second heading and second dropdown, based on selected day. -->
-  	  <div class="timeButtonTR">
-  		  <button onclick="timeButtonPressedTR(8)" class="timeBtn">8:00 A.M.</button>
-  		  <button onclick="timeButtonPressedTR(930)" class="timeBtn">9:30 A.M.</button>
-        <button onclick="timeButtonPressedTR(11)" class="timeBtn">11:00 A.M.</button>
-        <button onclick="timeButtonPressedTR(1230)" class="timeBtn">12:30 P.M.</button>
-        <button onclick="timeButtonPressedTR(14)" class="timeBtn">2:00 P.M.</button>
-        <button onclick="timeButtonPressedTR(1530)" class="timeBtn">3:30 P.M.</button>
-        <button onclick="timeButtonPressedTR(17)" class="timeBtn">5:00 P.M.</button>
-  	  </div>
-    </div>
-
-	  <button onclick="serveTheInfo()">GO</button>
-	  <p id="listOfAvailablePeople"></p>
-
   </body>
 </html>
