@@ -6,106 +6,29 @@ let timeSelected = "";
 
 
 function dayButtonPressed(dayIn) {
+  daySelected = dayIn;
   switch (dayIn) {
     case "m":
-      daySelected = dayIn;
+    case "w":
+    case "f":
       document.getElementById('container').innerHTML = mwfHTML;
       break;
     case "t":
-      daySelected = dayIn;
-      document.getElementById('container').innerHTML = trHTML;
-      break;
-    case "w":
-      daySelected = dayIn;
-      document.getElementById('container').innerHTML = mwfHTML;
-      break;
     case "r":
-      daySelected = dayIn;
       document.getElementById('container').innerHTML = trHTML;
       break;
-    case "f":
-      daySelected = dayIn;
-      document.getElementById('container').innerHTML = mwfHTML;
-      break;
+
     }
 }
 
 function timeButtonPressedMWF(timeIn) {
-  switch (timeIn) {
-    case "8":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-    case "9":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-    case "10":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-    case "11":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-    case "12":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-    case "13":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-    case "14":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-    case "15":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-    case "16":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-    case "17":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-  }
+  timeSelected = timeIn;
+  document.getElementById(container).innerHTML = "";
 }
 
 function timeButtonPressedTR(timeIn) {
-  switch (timeIn) {
-    case "8":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-    case "930":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-    case "11":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-    case "1230":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-    case "14":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-    case "1530":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-    case "17":
-      timeSelected = timeIn;
-      document.getElementById(container).innerHTML = "";
-      break;
-  }
+  timeSelected = timeIn;
+  document.getElementById(container).innerHTML = "";
 }
 
 function showAvailability() {

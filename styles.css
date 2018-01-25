@@ -5,6 +5,7 @@ h2 {
   font-family: 'Great Vibes', cursive;
   font-weight: 400;
   color: #434f5b;
+  text-align: center;
 }
 button {
   font-family: "Montserrat",sans-serif;
@@ -12,4 +13,5 @@ button {
   background-color: #a6d6d0;
   color: #1c1354;
   border: none;
+  text-align: center;
 }
