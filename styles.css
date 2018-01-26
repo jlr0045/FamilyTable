@@ -3,12 +3,14 @@ body {
 }
 h2 {
   font-family: 'Great Vibes', cursive;
+  font-size:6vw;
   font-weight: 400;
   color: #434f5b;
   text-align: center;
 }
 button {
   font-family: "Montserrat",sans-serif;
+  font-size: 2vw;
   border-radius: 6px;
   background-color: #a6d6d0;
   color: #1c1354;
